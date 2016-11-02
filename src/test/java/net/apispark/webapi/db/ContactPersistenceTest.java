@@ -3,8 +3,6 @@ package net.apispark.webapi.db;
 import org.junit.Assert;
 import org.junit.Test;
 import net.apispark.webapi.representation.Contact;
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.hamcrest.CoreMatchers.is;
 
 public class ContactPersistenceTest {
 	@Test
@@ -20,5 +18,12 @@ public class ContactPersistenceTest {
 		ContactPersistence.INSTANCE.addContact(exemple);
 		Assert.assertEquals(exemple, ContactPersistence.INSTANCE.getContact(exemple.getId()));
 	}
+	@Test
+	public void getContactTest2() throws Exception {
+		Contact exemple = new Contact();
+		ContactPersistence.INSTANCE.addContact(exemple);
+		Assert.assertEquals(1, 2);
+	}
+	
 	// switch to travis
 }
