@@ -9,10 +9,9 @@ import static org.hamcrest.CoreMatchers.is;
 public class ContactPersistenceTest {
 	@Test
 	public void addContactTest() throws Exception {
-	/*	Contact exemple = new Contact();
+		Contact exemple = new Contact();
 		ContactPersistence.INSTANCE.addContact(exemple);
-		Assert.assertNotEquals(null, exemple.getId());*/
-		Assert.assertNotEquals(2, 2);
+		Assert.assertNotEquals(null, exemple.getId());
 	}
 
 	@Test
